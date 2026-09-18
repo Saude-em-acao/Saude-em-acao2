@@ -28,14 +28,14 @@ export const HomeView: React.FC<HomeViewProps> = ({ navigate }) => {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7 space-y-5 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs uppercase tracking-wider">
                 <span className="w-2 h-2 rounded-full bg-[var(--leaf)] animate-pulse" />
-                ODS 3 · Saúde e Bem-Estar da ONU
+                <strong className="font-extrabold">ODS 3 · Saúde e Bem-Estar da ONU</strong>
               </div>
 
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.12]">
-                Defensores Agrícolas:{" "}
-                <span className="text-primary italic">o que chega à sua mesa?</span>
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.12] uppercase">
+                DEFENSORES AGRÍCOLAS:{" "}
+                <span className="text-primary italic">O QUE CHEGA À SUA MESA?</span>
               </h1>
 
               <p className="text-foreground/80 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
