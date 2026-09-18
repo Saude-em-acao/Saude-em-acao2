@@ -86,7 +86,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ navigate }) => {
                   <p className="text-xs font-bold text-primary uppercase tracking-wider">
                     Assista à Proposta do Projeto
                   </p>
-                  <p className="text-[13px] text-foreground/75 mt-0.5">
+                  <p className="text-sm text-foreground/75 mt-0.5">
                     Como a informação e a ODS 3 transformam a mesa brasileira
                   </p>
                 </div>

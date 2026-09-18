@@ -29,7 +29,9 @@
   --color-tomato: var(--tomato);
 }
 
+html,
 :root {
+  font-size: 150%;
   --radius: 1rem;
   --background: #fcf5e3;
   --foreground: #133015;

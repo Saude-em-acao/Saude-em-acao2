@@ -121,7 +121,7 @@ export const CriancasView: React.FC = () => {
                       (e.target as HTMLElement).style.display = "none";
                     }}
                   />
-                  <span className="absolute top-2 right-2 text-[10px] font-bold px-2 py-0.5 rounded-full bg-background/90 text-foreground border border-border">
+                  <span className="absolute top-2 right-2 text-xs font-bold px-2 py-0.5 rounded-full bg-background/90 text-foreground border border-border">
                     {game.categoria}
                   </span>
                 </div>
@@ -129,7 +129,7 @@ export const CriancasView: React.FC = () => {
                 <h4 className="font-display text-base font-bold text-foreground group-hover:text-primary transition leading-snug">
                   {game.titulo}
                 </h4>
-                <p className="text-[11px] font-semibold text-primary mt-0.5">
+                <p className="text-xs font-semibold text-primary mt-0.5">
                   {game.subtitulo}
                 </p>
                 <p className="mt-2 text-xs text-foreground/75 leading-relaxed">

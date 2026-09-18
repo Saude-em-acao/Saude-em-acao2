@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, navigate, user, on
             <div className="font-display text-lg sm:text-xl font-bold text-primary">
               Saúde em Ação
             </div>
-            <div className="text-[11px] text-muted-foreground -mt-0.5">
+            <div className="text-xs text-muted-foreground -mt-0.5">
               ODS 3 · Alimentação consciente
             </div>
           </div>
@@ -64,7 +64,7 @@ export const Header: React.FC<HeaderProps> = ({ currentRoute, navigate, user, on
               <button
                 key={link.to}
                 onClick={() => navigate(link.to)}
-                className={`px-3.5 py-1.5 rounded-full text-[13px] font-semibold transition cursor-pointer ${
+                className={`px-3.5 py-1.5 rounded-full text-sm font-semibold transition cursor-pointer ${
                   active
                     ? "bg-primary text-primary-foreground shadow-sm"
                     : "text-foreground hover:bg-secondary/70"

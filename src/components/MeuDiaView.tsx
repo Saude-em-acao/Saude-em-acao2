@@ -224,14 +224,14 @@ export const MeuDiaView: React.FC<MeuDiaViewProps> = ({ navigate }) => {
                             </span>
                             <div className="mt-1 flex items-center gap-2">
                               <span
-                                className="text-[11px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1"
+                                className="text-xs font-bold px-2 py-0.5 rounded-full flex items-center gap-1"
                                 style={{
                                   background: `color-mix(in oklab, ${nivel.cor} 22%, var(--card))`
                                 }}
                               >
                                 {nivel.emoji} {nivel.rotulo}
                               </span>
-                              <span className="text-[11px] text-muted-foreground">
+                              <span className="text-xs text-muted-foreground">
                                 {consumo.cuidados.length} de {CUIDADOS_PADRAO.length} cuidados
                               </span>
                             </div>
@@ -403,12 +403,12 @@ const ChecklistCuidados: React.FC<ChecklistCuidadosProps> = ({
     >
       <div className="flex items-center justify-between gap-2">
         <h4 className="font-display font-bold text-primary flex items-center gap-1.5 text-xs sm:text-sm">
-          <span className="w-5 h-5 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-[10px] shrink-0 font-bold">
+          <span className="w-5 h-5 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs shrink-0 font-bold">
             ✓
           </span>
           O que você fez neste alimento?
         </h4>
-        <span className="text-[11px] font-bold text-primary">🌱 {totalPts} pts</span>
+        <span className="text-xs font-bold text-primary">🌱 {totalPts} pts</span>
       </div>
 
       <div className="mt-2.5 space-y-1.5">
@@ -436,13 +436,13 @@ const ChecklistCuidados: React.FC<ChecklistCuidadosProps> = ({
               <div className="flex-1 leading-tight">
                 <span className="block font-semibold">{item.nome}</span>
                 {item.descricao && !compacto && (
-                  <span className="block text-[11px] text-muted-foreground mt-0.5">
+                  <span className="block text-xs text-muted-foreground mt-0.5">
                     {item.descricao}
                   </span>
                 )}
               </div>
 
-              <span className="text-[11px] font-bold text-primary shrink-0">
+              <span className="text-xs font-bold text-primary shrink-0">
                 +{item.pontos}
               </span>
             </button>
@@ -529,7 +529,7 @@ const ModalAdicionarAlimento: React.FC<ModalAdicionarAlimentoProps> = ({
             <button
               key={cat}
               onClick={() => setCategoria(cat)}
-              className={`text-[11px] font-semibold px-2.5 py-1 rounded-full border transition cursor-pointer ${
+              className={`text-xs font-semibold px-2.5 py-1 rounded-full border transition cursor-pointer ${
                 cat === categoria
                   ? "bg-primary text-primary-foreground border-primary"
                   : "border-border bg-background hover:border-primary/50 text-foreground/75"
@@ -567,13 +567,13 @@ const ModalAdicionarAlimento: React.FC<ModalAdicionarAlimentoProps> = ({
                   <span className="block text-sm font-bold text-foreground group-hover:text-primary transition truncate">
                     {alimento.emoji} {alimento.nome}
                   </span>
-                  <span className="text-[11px] text-muted-foreground block truncate">
+                  <span className="text-xs text-muted-foreground block truncate">
                     {alimento.categoria}
                   </span>
                 </div>
 
                 <span
-                  className="text-[11px] font-bold px-2 py-0.5 rounded-full shrink-0"
+                  className="text-xs font-bold px-2 py-0.5 rounded-full shrink-0"
                   style={{
                     background: `color-mix(in oklab, ${nivel.cor} 22%, var(--card))`
                   }}
@@ -591,7 +591,7 @@ const ModalAdicionarAlimento: React.FC<ModalAdicionarAlimentoProps> = ({
           )}
         </div>
 
-        <p className="mt-3 text-[11px] text-muted-foreground text-center border-t border-border pt-2">
+        <p className="mt-3 text-xs text-muted-foreground text-center border-t border-border pt-2">
           Você pode registrar quantos alimentos desejar em cada refeição.
         </p>
       </div>
@@ -646,7 +646,7 @@ const ModalFichaAlimento: React.FC<ModalFichaAlimentoProps> = ({
           )}
 
           <div>
-            <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+            <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
               {al.categoria}
             </div>
             <h3 className="font-display text-2xl font-bold text-primary">
@@ -685,7 +685,7 @@ const ModalFichaAlimento: React.FC<ModalFichaAlimentoProps> = ({
                 {al.defensivos.map((def, i) => (
                   <span
                     key={i}
-                    className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-secondary text-secondary-foreground"
+                    className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-secondary text-secondary-foreground"
                   >
                     {def}
                   </span>
@@ -715,7 +715,7 @@ const ModalFichaAlimento: React.FC<ModalFichaAlimentoProps> = ({
             {al.cuidados_texto ||
               "Lave abundantemente em água potável corrente, esfregando com escovinha própria se a casca for firme."}
           </p>
-          <p className="mt-2 text-[11px] text-muted-foreground leading-relaxed">
+          <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
             {AVISO_HIGIENIZACAO}
           </p>
         </section>
@@ -731,19 +731,19 @@ const ModalFichaAlimento: React.FC<ModalFichaAlimentoProps> = ({
             </p>
             <ol className="mt-2.5 space-y-1.5 text-xs text-foreground/85">
               <li className="flex gap-2">
-                <span className="w-4 h-4 rounded-full bg-primary text-primary-foreground text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                <span className="w-4 h-4 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                   1
                 </span>
                 <span>Lavar em água corrente e colocar de molho em solução clorada por 15 min.</span>
               </li>
               <li className="flex gap-2">
-                <span className="w-4 h-4 rounded-full bg-primary text-primary-foreground text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                <span className="w-4 h-4 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                   2
                 </span>
                 <span>Descascar sempre que a receita permitir, diminuindo resíduos externos.</span>
               </li>
               <li className="flex gap-2">
-                <span className="w-4 h-4 rounded-full bg-primary text-primary-foreground text-[10px] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                <span className="w-4 h-4 rounded-full bg-primary text-primary-foreground text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                   3
                 </span>
                 <span>Comprar de produtores orgânicos ou agroecológicos certificados.</span>
@@ -768,7 +768,7 @@ const ModalFichaAlimento: React.FC<ModalFichaAlimentoProps> = ({
               <BookOpen className="w-3.5 h-3.5" />
               <span>Fontes consultadas</span>
             </div>
-            <ul className="mt-1.5 space-y-0.5 text-[11px] text-muted-foreground">
+            <ul className="mt-1.5 space-y-0.5 text-xs text-muted-foreground">
               {al.fontes.map((f, i) => (
                 <li key={i}>• {f}</li>
               ))}

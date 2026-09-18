@@ -122,17 +122,17 @@ export const InformeView: React.FC = () => {
 
                 {/* Badges */}
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
-                  <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-background/90 backdrop-blur-xs text-foreground border border-border shadow-xs flex items-center gap-1">
+                  <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-background/90 backdrop-blur-xs text-foreground border border-border shadow-xs flex items-center gap-1">
                     {getCategoryIcon(item.categoria)}
                     {item.categoria}
                   </span>
 
-                  <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-primary text-primary-foreground shadow-xs">
+                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-primary text-primary-foreground shadow-xs">
                     {item.veiculo}
                   </span>
                 </div>
 
-                <div className="absolute bottom-2.5 left-3 text-[11px] text-white/90 font-semibold drop-shadow-sm">
+                <div className="absolute bottom-2.5 left-3 text-xs text-white/90 font-semibold drop-shadow-sm">
                   {item.data}
                 </div>
               </div>

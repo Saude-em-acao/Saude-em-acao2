@@ -130,7 +130,7 @@ export const AlimentosView: React.FC = () => {
               >
                 <span>{nivel.emoji}</span>
                 <span>{nivel.rotulo}</span>
-                <span className="opacity-60 text-[11px]">({count})</span>
+                <span className="opacity-60 text-xs">({count})</span>
               </button>
             );
           })}
@@ -176,7 +176,7 @@ export const AlimentosView: React.FC = () => {
 
                 {/* Badges on image */}
                 <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
-                  <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-background/90 backdrop-blur-xs text-foreground border border-border shadow-xs">
+                  <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-background/90 backdrop-blur-xs text-foreground border border-border shadow-xs">
                     {item.categoria}
                   </span>
 
@@ -213,7 +213,7 @@ export const AlimentosView: React.FC = () => {
                     {/* Pesticides found */}
                     {item.defensivos.length > 0 && (
                       <div>
-                        <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground mb-1.5">
+                        <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-1.5">
                           Defensores detectados pela Anvisa:
                         </div>
                         <div className="flex flex-wrap gap-1">
@@ -232,7 +232,7 @@ export const AlimentosView: React.FC = () => {
                     {/* Health Risks */}
                     {item.riscos.length > 0 && (
                       <div className="space-y-1">
-                        <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+                        <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
                           Potenciais riscos à saúde:
                         </div>
                         <ul className="space-y-1">
@@ -273,7 +273,7 @@ export const AlimentosView: React.FC = () => {
                         <CheckCircle2 className="w-3.5 h-3.5 text-[var(--leaf)]" />
                         Higienização Recomendada
                       </div>
-                      <span className="text-[11px] text-muted-foreground font-semibold">
+                      <span className="text-xs text-muted-foreground font-semibold">
                         {item.categoria}
                       </span>
                     </div>
@@ -290,7 +290,7 @@ export const AlimentosView: React.FC = () => {
                         </ol>
 
                         {item.limpeza.observacao && (
-                          <div className="rounded-xl bg-card border border-border p-2.5 mt-2 text-[11px] text-muted-foreground leading-normal">
+                          <div className="rounded-xl bg-card border border-border p-2.5 mt-2 text-xs text-muted-foreground leading-normal">
                             <strong>Nota:</strong> {item.limpeza.observacao}
                           </div>
                         )}
@@ -307,7 +307,7 @@ export const AlimentosView: React.FC = () => {
 
                     {/* Sources */}
                     {item.fontes && item.fontes.length > 0 && (
-                      <div className="pt-2 text-[10px] text-muted-foreground flex items-center gap-1">
+                      <div className="pt-2 text-xs text-muted-foreground flex items-center gap-1">
                         <BookOpen className="w-3 h-3 text-primary shrink-0" />
                         <span className="truncate">Fonte: {item.fontes.join(", ")}</span>
                       </div>

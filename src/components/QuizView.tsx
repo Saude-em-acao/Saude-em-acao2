@@ -176,7 +176,7 @@ export const QuizView: React.FC<QuizViewProps> = ({ navigate }) => {
                 >
                   <Leaf className="w-8 h-8 text-[var(--leaf)] group-hover:scale-110 transition" />
                   <span className="font-bold text-foreground text-sm sm:text-base">Limpo</span>
-                  <span className="text-[11px] text-muted-foreground">baixo resíduo</span>
+                  <span className="text-xs text-muted-foreground">baixo resíduo</span>
                 </button>
 
                 <button
@@ -188,7 +188,7 @@ export const QuizView: React.FC<QuizViewProps> = ({ navigate }) => {
                   <span className="font-bold text-foreground text-sm sm:text-base">
                     Contaminado
                   </span>
-                  <span className="text-[11px] text-muted-foreground">campeão Anvisa</span>
+                  <span className="text-xs text-muted-foreground">campeão Anvisa</span>
                 </button>
               </div>
             )}

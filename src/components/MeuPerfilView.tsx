@@ -100,7 +100,7 @@ export const MeuPerfilView: React.FC<MeuPerfilViewProps> = ({ navigate, user, on
       {/* 4 Stats Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <div className="rounded-2xl border border-border bg-card p-4 text-center">
-          <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+          <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
             Sequência
           </div>
           <div className="mt-1 font-display text-xl sm:text-2xl font-bold text-primary flex items-center justify-center gap-1">
@@ -110,7 +110,7 @@ export const MeuPerfilView: React.FC<MeuPerfilViewProps> = ({ navigate, user, on
         </div>
 
         <div className="rounded-2xl border border-border bg-card p-4 text-center">
-          <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+          <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
             Índice médio
           </div>
           <div className="mt-1 font-display text-xl sm:text-2xl font-bold text-primary">
@@ -119,7 +119,7 @@ export const MeuPerfilView: React.FC<MeuPerfilViewProps> = ({ navigate, user, on
         </div>
 
         <div className="rounded-2xl border border-border bg-card p-4 text-center">
-          <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+          <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
             Refeições
           </div>
           <div className="mt-1 font-display text-xl sm:text-2xl font-bold text-primary">
@@ -128,7 +128,7 @@ export const MeuPerfilView: React.FC<MeuPerfilViewProps> = ({ navigate, user, on
         </div>
 
         <div className="rounded-2xl border border-border bg-card p-4 text-center">
-          <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+          <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
             Cuidados
           </div>
           <div className="mt-1 font-display text-xl sm:text-2xl font-bold text-primary">
@@ -159,7 +159,7 @@ export const MeuPerfilView: React.FC<MeuPerfilViewProps> = ({ navigate, user, on
                     {nv.emoji} {nv.nome}
                   </span>
                   {isAtual && (
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary text-primary-foreground">
+                    <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary text-primary-foreground">
                       Atual
                     </span>
                   )}
@@ -202,12 +202,12 @@ export const MeuPerfilView: React.FC<MeuPerfilViewProps> = ({ navigate, user, on
                 <div className="font-bold text-xs sm:text-sm text-foreground">
                   {cq.nome}
                 </div>
-                <div className="text-[11px] text-muted-foreground mt-1 leading-snug">
+                <div className="text-xs text-muted-foreground mt-1 leading-snug">
                   {cq.descricao}
                 </div>
                 <div className="mt-2">
                   <span
-                    className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                    className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                       unlocked
                         ? "bg-primary/20 text-primary"
                         : "bg-muted text-muted-foreground"
